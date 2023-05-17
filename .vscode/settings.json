@@ -1,0 +1,21 @@
+{
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "Enigma Sqlite",
+      "database": "${workspaceFolder:Ruby}/DBS/enigma.db"
+    },
+    {
+      "previewLimit": 50,
+      "server": "db.wzsklrouypojzebrhelh.supabase.co",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "enigma postgress",
+      "database": "postgres",
+      "username": "postgres",
+      "password": "4!$?yqa96!2i-AQ"
+    }
+  ]
+}

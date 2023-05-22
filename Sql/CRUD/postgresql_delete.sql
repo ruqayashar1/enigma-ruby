@@ -1,0 +1,3 @@
+-- DELETE -> DELETE -> DELETE FROM <TABLE_NAME> WHERE ()
+
+DELETE FROM students WHERE marks=0

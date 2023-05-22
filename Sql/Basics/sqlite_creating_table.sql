@@ -4,8 +4,12 @@
 
 --columns of table 
 
+-- create table <table>
+-- delete a table from sqlit and postgresql
+-- drop table <table_name>
+
 CREATE TABLE students(
-     id INTEGER PRIMARY KEY AUTOINCREMENT,
+     id INTEGER PRIMARY KEY AUTOINCREMENT, --postgresql SERIAL
      name TEXT,
      email TEXT,
      phone INTEGER,

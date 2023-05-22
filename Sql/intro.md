@@ -30,3 +30,5 @@ sql patients,kins <patient_id> <samuel>
 # tools -> canvas
 
 #postgresql db password: 4!$?yqa96!2i-AQ
+
+# Create Tables.

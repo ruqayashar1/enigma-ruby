@@ -1,0 +1,21 @@
+
+
+namespace :to_do do
+
+    desc "Call this taks to say hello"
+    task :say_hello do
+        puts "Hello, Learning Rake"
+    end
+
+    desc "Buy goods"
+    task :buy do
+        puts "I love to buy chicken"
+    end
+
+end
+
+desc "print to 100"
+task :print_to_100 do
+    require_relative "./rb"
+    to_100()
+end

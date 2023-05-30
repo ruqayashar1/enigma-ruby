@@ -1,0 +1,19 @@
+{
+  "name": "ruby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "k.js",
+  "scripts": {
+    "start": "node k.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthur-codeX/enigma-ruby.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arthur-codeX/enigma-ruby/issues"
+  },
+  "homepage": "https://github.com/Arthur-codeX/enigma-ruby#readme"
+}

@@ -1,0 +1,25 @@
+
+desc "loading the environment"
+task :environment do
+    require_relative "./config/environment"
+end
+
+namespace :db do
+    desc "create student table"
+    task :create_student do
+        require_relative "./db/create_students"
+    end
+end
+
+namespace :students do
+    desc "create a student"
+    task :create_student do
+        require_relative "./lib/student.rb"
+        Student.create(name:"name:#{Time.now.getutc}",email:"mail:#{Time.now.getutc}")
+    end
+
+    task :get_students do
+        require_relative "./lib/student.rb"
+        p Student.all
+    end
+end

@@ -1,14 +1,14 @@
 
--- CREATE TABLE address(
+-- CREATE TABLE address_2(
 --     id SERIAL PRIMARY KEY,
 --     country VARCHAR(255) NOT NULL,
 --     county VARCHAR(255) NOT NULL,
 --     pobox VARCHAR(255) NOT NULL,
---     city VARCHAR(255) NOT NULL
-       student_id INTEGER NOT NULL UNIQUE REFERENCES students(id)
--- );
+--     city VARCHAR(255) NOT NULL,
+--     student_id INTEGER NOT NULL UNIQUE REFERENCES students(id)
+--  );
 
-DROP TABLE students;
+-- DROP TABLE students;
 
 -- ON DELETE RESTRICT
 
@@ -16,7 +16,6 @@ DROP TABLE students;
 --      id SERIAL PRIMARY KEY,
 --      name VARCHAR(255) NOT NULL,
 --      email VARCHAR(255) NOT NULL UNIQUE,
-     
 -- ) 
 
 -- SELECT * FROM address WHERE id=(SELECT address_id FROM students WHERE email='amos@gmail.com')

@@ -16,6 +16,12 @@
       "database": "postgres",
       "username": "postgres",
       "password": "4!$?yqa96!2i-AQ"
+    },
+    {
+      "previewLimit": 10000,
+      "driver": "SQLite",
+      "name": "catch-up",
+      "database": "${workspaceFolder:Ruby}/CatchUp_1_6-2-2023/DBS/catch.db"
     }
   ]
 }

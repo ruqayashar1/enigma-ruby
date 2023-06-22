@@ -6,4 +6,17 @@ Rails.application.routes.draw do
 
   root "pet#index"
 
+  get "/add",to: "pet#add"
+
+  get "/delete/:id", to:"pet#delete_pet"
+
+  get "/update/:id",to: "pet#update"
+
+  put "/update/:id", to:"pet#update_pet"
+
+  post "/add",to:"pet#add_pet"
+
+
+  #example quer post "/click me" to:"fdsdfsd"
+
 end

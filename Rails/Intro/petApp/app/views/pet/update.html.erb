@@ -1,0 +1,25 @@
+<h1>Edit Pet</h1>
+
+<form action="/update/<%=@pet.id%>" method="put">
+
+<p>
+  <label>Name</label>
+  <input name="name" value="<%= @pet.name%>" required />
+</p>
+
+
+<p>
+  <label>Classification</label>
+  <input name="classification" value="<%= @pet.classification%>"  required />
+</p>
+
+<p>
+  <label>Description</label>
+  <input name="description" value="<%= @pet.description%>"  required />
+</p>
+
+
+<button type="submit">Submit</button>
+
+
+</form>

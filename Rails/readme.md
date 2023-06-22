@@ -62,3 +62,5 @@ class name:Pet -> Capitalize CamelCase
 table name:pets
 
 1:create our migration
+
+2. Validation.

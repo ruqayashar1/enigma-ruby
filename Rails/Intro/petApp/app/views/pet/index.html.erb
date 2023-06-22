@@ -1,0 +1,38 @@
+<h1>All Of Our Pets</h1>
+
+<a href="/add">
+ Add Pet
+</a>
+
+<table style="width:100%">
+  <tr>
+    <th>id</th>
+    <th>Name</th>
+    <th>Clasffiction</th>
+    <th>Description </th>
+    <th>Actions</th>
+  </tr>
+
+  <% @pets.each do |pet| %>
+    <tr>
+   <td><%= pet.id%></td>
+   <td><%= pet.name%></td>
+   <td><%= pet.classification%></td>
+   <td><%= pet.description%></td>
+   <td style="display:flex;justify-content:space-evenly	">
+     <a href="/delete/<%=pet.id%>">
+      Delete
+     </a>
+    
+     <a href="/update/<%=pet.id%>">
+      Update
+     </a>
+
+     <a href="">
+      View
+     </a>
+   </td>
+  </tr>
+  <%end%>
+ 
+</table>

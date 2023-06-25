@@ -1,4 +1,4 @@
-<h1>Add Pet</h1>
+<%# <h1>Add Pet</h1>
 
 <form action="/add" method="post">
 
@@ -23,4 +23,42 @@
 <button type="submit">Submit</button>
 
 
-</form>
+</form> %>
+<h1>Add a New Pet</h1>
+
+<%= form_with model: @pet, id: "new_pet_form" do |form| %>
+  <% if @pet.errors.any? %>
+    <div id="error_explanation">
+      <h2>Validation errors:</h2>
+      <ul>
+        <% @pet.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :classification %>
+    <%= form.text_field :classification %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Add Pet" %>
+  </div>
+<% end %>
+
+
+
+
+
